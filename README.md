@@ -1,4 +1,4 @@
-#Thrishik's Portfolio
+# Thrishik's_Portfolio
 
 🌟 Exciting Update! 🚀 I'm thrilled to announce the launch of my new personal portfolio website, crafted with ❤ using React! Explore my passion for web development and design at 
 
