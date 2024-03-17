@@ -1,0 +1,64 @@
+@import "../../App.scss";
+.Sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    // z-index: 10;
+   
+
+    .bg{
+        z-index: 10;
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+width: 400px;
+background: white;
+@include mobile{
+    width: 200px;
+    
+}
+
+
+      .links{
+       z-index: 10;
+position: absolute;
+width: 100%;
+height: 100%;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 20px;
+
+    a{
+        font-size: 40px;
+        color: black;
+        @include mobile{
+            font-size: 20px;
+        }
+    }
+
+      }
+    }
+    button{
+        z-index: 10;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border-style: none;
+        position: fixed;
+        top: 25px;
+        left: 25px;
+        align-items: center;
+        background-color: transparent;
+       font-size: 12px;
+        color: black;
+        
+        cursor: pointer;
+    }
+
+}

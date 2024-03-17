@@ -1,0 +1,141 @@
+@import "../../App.scss";
+.contact{
+    height: 100%;
+    max-width: 1336px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    overflow-x: hidden;
+    @include mobile{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+  
+    .textContainer{
+        color: white;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        @include mobile{
+            gap: 15px;
+            text-align: center;
+            align-items: center;
+            margin-top: 70px;
+        }
+        @include tablet{
+            gap: 15px;
+            text-align: center;
+            align-items: center;
+            margin-top: 70px;
+        }
+      
+    h1{
+        font-size: 100px;
+        line-height:88px ;
+        font-weight: bolder;
+        @include mobile{
+            
+            font-size:34px ;
+        }
+        @include tablet{
+            
+            font-size:34px ;
+        }
+      
+    }
+        
+    h1:hover{
+        color: #196EF5;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 28px;
+    }
+    span{
+        font-weight: 300;
+    }
+    }
+    .formContainer{
+        flex: 1;
+        position: relative;
+        @include mobile{
+            width: 85%;
+            padding:10px;
+        }
+        @include tablet{
+            width: 85%;
+            padding:10px;
+        }
+    .phonesvg{
+       
+        position: absolute;
+        margin: auto;
+        width:500px;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        @include tablet{
+            width:500px;
+            height: 400px;
+        }
+
+        @include mobile{
+            .svg{
+                width:300px;
+                height: 300px;
+            
+        }
+    }
+        @include tablet{
+            .svg{
+                width:300px;
+                height: 300px;
+            
+        }
+    }
+}
+
+     form{
+       display: flex;
+       flex-direction: column;
+       gap:20px;
+     
+
+        input,textarea{
+            z-index: 999;
+            padding: 20px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            border-radius: 5px;
+            @include mobile{
+                padding:10px;
+            }
+          
+            @include tablet{
+                padding:10px;
+            }
+          
+        }
+        button{
+            padding: 20px;
+            border: none;
+            background-color: #196EF5;
+            cursor: pointer;
+            z-index: 999;
+        font-weight: 500;
+        @include mobile{
+            padding:10px;
+        }
+        @include tablet{
+            padding:10px;
+        }
+          }
+
+    }
+}
+
+}

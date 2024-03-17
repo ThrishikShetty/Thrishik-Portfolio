@@ -1,0 +1,313 @@
+@import "../../App.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --time:20s;
+    --timeM:30s;
+    --timeT:25s;
+    --timeF:40s;
+  }
+.section{
+    min-height: 100vh;
+    background: #000;
+}
+  .heading{
+    margin-bottom: 70px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5rem;
+    @include mobile{
+        font-size: 3rem;
+        text-transform: uppercase;
+     }
+    @include tablet{
+        font-size: 4rem;
+        text-transform: uppercase;
+     }
+  }
+  .cont{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    @include mobile{
+       flex-direction: column;
+       overflow: hidden;
+       gap: 20px;
+    }
+
+  }
+  .content{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* top: 0; */
+    width: 50%;
+    background: #000;
+    flex-direction: column;
+    @include mobile{
+        width: 100%;
+     }
+ 
+}
+
+.scroll {
+    position: relative;
+    display: flex;
+    width: 700px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+
+    @include tablet{
+        width: 100%;
+     }
+
+}
+.scrollmiddle {
+    position: relative;
+    display: flex;
+    width: 700px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+    @include tablet{
+        width: 100%;
+     }
+}
+.scrollthird{
+    position: relative;
+    display: flex;
+    width: 700px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+    @include tablet{
+        width: 100%;
+     }
+}
+.scrollforth{
+    position: relative;
+    display: flex;
+    width: 700px;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+    @include tablet{
+        width: 100%;
+     }
+}
+
+.scroll div {
+    white-space: nowrap;
+    animation: scroll var(--time) linear infinite;
+    animation-delay: calc(var(--time)*-1);
+
+}
+
+.scroll div:nth-child(2) {
+    animation: scroll2 var(--time) linear infinite;
+    animation-delay: calc(var(--time)/-2);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.scroll div span {
+    display: inline-flex;
+    margin: 10px;
+    letter-spacing: 0.2em;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.scroll div span:hover {
+    background: #3fd2f9;
+    cursor: pointer;
+}
+
+
+.scrollmiddle div span {
+    display: inline-flex;
+    margin: 10px;
+    letter-spacing: 0.2em;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.scrollmiddle div span:hover {
+    background: #3fd2f9;
+    cursor: pointer;
+}
+
+.scrollmiddle div {
+    white-space: nowrap;
+    animation: scrollM var(--timeM) linear infinite;
+    animation-delay: calc(var(--timeM)*-1);
+
+}
+
+.scrollmiddle div:nth-child(2) {
+    animation: scrollM2 var(--timeM) linear infinite;
+    animation-delay: calc(var(--timeM)/-2);
+}
+
+@keyframes scrollM {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrollM2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+.scrollthird div span {
+    display: inline-flex;
+    margin: 10px;
+    letter-spacing: 0.2em;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.scrollthird div span:hover {
+    background: #3fd2f9;
+    cursor: pointer;
+}
+
+.scrollthird div {
+    white-space: nowrap;
+    animation: scrollT var(--timeT) linear infinite;
+    animation-delay: calc(var(--timeT)*-1);
+
+}
+
+.scrollthird div:nth-child(2) {
+    animation: scrollT2 var(--timeT) linear infinite;
+    animation-delay: calc(var(--timeT)/-2);
+}
+
+@keyframes scrollT {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrollT2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.scrollforth div span {
+    display: inline-flex;
+    margin: 10px;
+    letter-spacing: 0.2em;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.scrollforth div span:hover {
+    background: #3fd2f9;
+    cursor: pointer;
+}
+
+.scrollforth div {
+    white-space: nowrap;
+    animation: scrollF var(--timeF) linear infinite;
+    animation-delay: calc(var(--timeF)*-1);
+
+}
+
+.scrollforth div:nth-child(2) {
+    animation: scrollF2 var(--timeF) linear infinite;
+    animation-delay: calc(var(--timeF)/-2);
+}
+
+@keyframes scrollF {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrollF2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.imgBox div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgBox img {
+    max-width: 100px;
+    scale: 0.8;
+}

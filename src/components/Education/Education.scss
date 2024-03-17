@@ -1,0 +1,90 @@
+@import "../../App.scss";
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // padding:  59px ,10%;
+    // margin:30px;
+    // margin-left: 30px;
+   
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        @include mobile{
+            grid-template-columns: 1fr ;
+        }
+
+        .col{
+            .title{
+                color:white ;
+                padding: 0 0 20px 0px;
+                text-align: center;
+                margin-top: 30px;
+                font-size: 40px;
+                @include mobile{
+                  
+                    text-align: center;
+                    margin-top: 20px;
+                    font-size: 20px;
+                }
+                @include tablet{
+                  
+                    text-align: center;
+                    // margin-top: 20px;
+                    font-size: 20px;
+                }
+            }
+            .contents{
+                
+                .box{
+                    padding: 20px;
+                border-left: 5px solid #196EF5;
+                border-radius: 30px;
+                
+                margin-top: 40px;
+                position: relative;
+                // background-color: #ffffff;
+                @include mobile{
+                   
+                    margin-top: 30px;
+                }
+                @include tablet{
+                   
+                    margin-top: 30px;
+                }
+                h4{
+                    position: relative;
+                color: #196EF5;
+                @include mobile{
+                    font-size: 10px;
+                }
+                @include tablet{
+                    font-size: 10px;
+                }
+                }
+                h3{
+                    @include mobile{
+                        font-size: 15px;
+                    }
+                    @include tablet{
+                        font-size: 15px;
+                    }
+                    color: #ffcc74;
+                    text-transform: uppercase;
+                }
+                p{
+                    @include mobile{
+                        font-size: 10px;
+                    }
+                    @include tablet{
+                        font-size: 10px;
+                    }
+                }
+                }
+                
+            }
+        }
+    }
+}
